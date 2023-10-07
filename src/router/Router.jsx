@@ -9,6 +9,8 @@ import Blog from "../pages/Blog";
 import AllJullery from "../pages/all jullery/AllJullery";
 import MyJullery from "../pages/my jullery/MyJullery";
 import AddJullery from "../pages/add jullery/AddJullery";
+import Login from "../pages/Login";
+import Registration from "../pages/Registration";
   
   export const router = createBrowserRouter([
     {
@@ -34,6 +36,14 @@ import AddJullery from "../pages/add jullery/AddJullery";
         {
             path:'/blog',
             element: <Blog></Blog>
+        },
+        {
+            path:'/login',
+            element: <Login></Login>
+        },
+        {
+            path:'/registration',
+            element: <Registration></Registration>
         }
       ]
     },

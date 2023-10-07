@@ -9,6 +9,7 @@ const NavOptions = <>
     <li><Link  to="/myJullery">My Jullery</Link></li>
     <li><Link  to="/addJullery">Add Jullery</Link></li>
     <li><Link to="/blog">Blogs</Link></li>
+    <li><Link to="/login">Login</Link></li>
 </>
 
 
