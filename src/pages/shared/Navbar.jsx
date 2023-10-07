@@ -1,14 +1,17 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 
 const Navbar = () => {
-
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/login";
+  
   const { user, logOut } = useContext(AuthContext);
   const handleLogOut = () => {
     logOut()
         .then(() => { })
         .catch(error => console.log(error));
+        navigate(from, { replace: true });
 }
 
 const NavOptions = <>
@@ -17,8 +20,16 @@ const NavOptions = <>
     <li><Link  to="/myJullery">My Jullery</Link></li>
     <li><Link  to="/addJullery">Add Jullery</Link></li>
     <li><Link to="/blog">Blogs</Link></li>
-    <li><Link to="/login">Login</Link></li>
-    <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
+
+    {
+      user ? 
+      <> <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button></>
+     
+      : 
+      <> <li><Link to="/login">Login</Link></li></>
+    } 
+   
+   
 </>
 
 
@@ -35,7 +46,7 @@ const NavOptions = <>
       {NavOptions}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <a className="btn btn-ghost normal-case text-xl">Jullery Mat</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -43,11 +54,20 @@ const NavOptions = <>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+  {
+    user ? 
+    <>
+      <img src={user?.photoURL} className='w-16 rounded-full' alt="img"  />
+    </> :
+    <>
+    
+    </>
+  }
+    
   </div>
 </div> 
         </div>
     );
 };
 
-export default Navbar;
+export default Navbar; 
