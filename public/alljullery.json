@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Gold Necklace",
+        "price": 500.0,
+        "img": "https://img.freepik.com/free-vector/realistic-gold-silver-jewelry-display-black-mannequins-stands-grey-surface_1284-9644.jpg?size=626&ext=jpg&ga=GA1.1.466096099.1680198534&semt=ais"
+    },
+    {
+        "name": "Diamond Earrings",
+        "price": 1000.0,
+        "img": "https://img.freepik.com/free-photo/aesthetic-golden-earrings-arrangement_23-2149846597.jpg?size=626&ext=jpg&ga=GA1.1.466096099.1680198534&semt=sph"
+    },
+  
+    {
+        "name": "Sapphire Necklace",
+        "price": 800.0,
+        "img": "https://img.freepik.com/free-vector/gold-chains-background-silver-hanging-link-metallic-shiny_1284-41506.jpg?size=626&ext=jpg&ga=GA1.2.466096099.1680198534&semt=ais"
+    },
+  
+    {
+        "name": "Pearl Earrings",
+        "price": 300.0,
+        "img": "https://img.freepik.com/free-photo/still-life-aesthetic-earrings_23-2149649128.jpg?size=626&ext=jpg&ga=GA1.1.466096099.1680198534&semt=sph"
+    },
+   
+    {
+        "name": "Platinum Necklace",
+        "price": 1200.0,
+        "img": "https://img.freepik.com/premium-photo/indian-traditional-jewellery_136354-3598.jpg?size=626&ext=jpg&ga=GA1.2.466096099.1680198534&semt=sph"
+    },
+  
+    {
+        "name": "Garnet Earrings",
+        "price": 225.0,
+        "img": "https://img.freepik.com/free-photo/still-life-aesthetic-earrings_23-2149649106.jpg?size=626&ext=jpg&ga=GA1.1.466096099.1680198534&semt=sph"
+    },
+   
+    {
+        "name": "Citrine Necklace",
+        "price": 375.0,
+        "img": "https://img.freepik.com/free-photo/gold-necklaces-with-pair-earrings_1340-42881.jpg?size=626&ext=jpg&ga=GA1.2.466096099.1680198534&semt=sph"
+    },
+  
+    {
+        "name": "White Gold Necklace",
+        "price": 600.0,
+        "img": "https://img.freepik.com/premium-psd/gold-jewelry-element-transparent-background_221414-278.jpg?w=740"
+    }
+   
+]
