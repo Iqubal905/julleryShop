@@ -6,7 +6,7 @@ const AllJuwelry = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        fetch('alljullery.json')
+        fetch('http://localhost:5000/allItems')
             .then(res => res.json())
             .then(data => {
                 setItems(data);

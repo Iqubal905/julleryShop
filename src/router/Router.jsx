@@ -11,6 +11,10 @@ import MyJullery from "../pages/my jullery/MyJullery";
 import AddJullery from "../pages/add jullery/AddJullery";
 import Login from "../pages/Login";
 import Registration from "../pages/Registration";
+import Dashboard from "../layouts/Dashboard";
+import AdminHome from "../pages/dashboard/AdminHome";
+import AllItems from "../pages/dashboard/AllItems";
+import MyItems from "../pages/dashboard/MyItems";
   
   export const router = createBrowserRouter([
     {
@@ -45,6 +49,25 @@ import Registration from "../pages/Registration";
             path:'/registration',
             element: <Registration></Registration>
         }
+      ]
+    },
+    {
+      path: "dashboard",
+      element: <Dashboard></Dashboard>,
+      children: [
+        {
+            path:'adminhome',
+            element: <AdminHome></AdminHome>
+        },
+        {
+          path:'allJuwelery',
+          element: <AllItems></AllItems>
+      },
+      {
+        path:'myJuwelery',
+        element: <MyItems></MyItems>
+    }
+      
       ]
     },
   ]);
