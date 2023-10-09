@@ -32,7 +32,7 @@ const AddJullery = () => {
       console.log(formData);
       // Perform API call to send data to the server or handle it as needed
   
-      fetch('http://localhost:5000/allItems', {
+      fetch('https://jullery-server-side.vercel.app/allItems', {
           method: 'POST',
           headers: {
               'content-type': 'application/json'

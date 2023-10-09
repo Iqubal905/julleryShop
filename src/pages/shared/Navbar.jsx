@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
-
+import logo from '../../assets/logo.png'
 const Navbar = () => {
   const navigate = useNavigate();
   const from = location.state?.from?.pathname || "/login";
@@ -49,6 +49,7 @@ const NavOptions = <>
       {NavOptions}
       </ul>
     </div>
+    <img src={logo} className='w-16 rounded-full' alt="img" />
     <a className="btn btn-ghost normal-case text-xl">Jewelry Mat</a>
   </div>
   <div className="navbar-center hidden lg:flex">

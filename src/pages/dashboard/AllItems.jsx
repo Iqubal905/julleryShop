@@ -6,7 +6,7 @@ const AllItems = () => {
     const [item, setItems] = useState([]);
     
     useEffect(() => {
-        fetch('http://localhost:5000/allItems')
+        fetch('https://jullery-server-side.vercel.app/allItems')
             .then(res => res.json())
             .then(data => {
                 setItems(data);
