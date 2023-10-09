@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import AllJuwelry from '../../hooks/AllJuwelry';
 import JulleryCard from '../all jullery/julleryCard';
 import { Link } from 'react-router-dom';
 import SectionTitle from '../shared/SectionTitle';
 
 const Jullery = () => {
-    const [items] = AllJuwelry()
+    // const [items] = AllJuwelry()
+
+
+    const [items, setItems] = useState([]);
+    
+    useEffect(() => {
+        fetch('https://jullery-server-side.vercel.app/allItems')
+            .then(res => res.json())
+            .then(data => {
+                setItems(data);
+               
+                });
+    }, [])
+
+
+
+
     const itemsPart = items.slice(0,6)
     console.log(items);
         return (
