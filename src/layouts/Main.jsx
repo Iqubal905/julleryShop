@@ -5,7 +5,7 @@ import Navbar from "../pages/shared/Navbar";
 
 const Main = () => {
     return (
-        <div>
+        <div className="  bg-rose-300">
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
