@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
 import Swal from 'sweetalert2';
+import SectionTitle from '../shared/SectionTitle';
 const AddJullery = () => {
 
     const {user} = useContext(AuthContext)
@@ -63,10 +64,15 @@ const AddJullery = () => {
 
 
 
-     <div className='max-w-5xl mx-auto  pt-12  pb-32 grid bg-slate-400'>
+     <div className='max-w-5xl mx-auto   md:pt-32  md:pb-32 grid bg-slate-400'>
 
-        <h2 className=' text-center text-3xl pb-8'>Add Items</h2>
-         <form onSubmit={handleSubmit} className="">
+<SectionTitle
+         title={"Add New Jewelry"}
+      
+        > </SectionTitle>
+
+
+         <form onSubmit={handleSubmit} className="mt-6">
         <div className="">
           <label htmlFor="pictureURL" className="block mb-">
             Picture URL

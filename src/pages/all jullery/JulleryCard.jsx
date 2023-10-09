@@ -12,7 +12,12 @@ const JulleryCard = (item) => {
     <p>Price: {price}</p>
       
     </div>
-  </div> 
+   <div className='flex justify-between'>
+   <button className='btn  btn-link'>Add to card</button> 
+   <button className=' btn btn-link'>Buy</button> 
+   </div>
+  </div>
+  
         </div>
     );
 };

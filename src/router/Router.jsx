@@ -15,6 +15,7 @@ import Dashboard from "../layouts/Dashboard";
 import AdminHome from "../pages/dashboard/AdminHome";
 import AllItems from "../pages/dashboard/AllItems";
 import MyItems from "../pages/dashboard/MyItems";
+import PrivateRoute from "./PrivateRoute";
   
   export const router = createBrowserRouter([
     {
@@ -35,7 +36,7 @@ import MyItems from "../pages/dashboard/MyItems";
         },
         {
             path:'/addJullery',
-            element: <AddJullery></AddJullery>
+            element: <PrivateRoute><AddJullery></AddJullery></PrivateRoute>
         },
         {
             path:'/blog',
